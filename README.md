@@ -1,5 +1,5 @@
-About pokemonpy-feedstock
-=========================
+About pokemonpy-package-feedstock
+=================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pokemonpy-feedstock/blob/main/LICENSE.txt)
 
@@ -27,53 +27,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pokemonpy-green.svg)](https://anaconda.org/conda-forge/pokemonpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pokemonpy.svg)](https://anaconda.org/conda-forge/pokemonpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pokemonpy.svg)](https://anaconda.org/conda-forge/pokemonpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pokemonpy.svg)](https://anaconda.org/conda-forge/pokemonpy) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pokemonpy--package-green.svg)](https://anaconda.org/conda-forge/pokemonpy-package) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pokemonpy-package.svg)](https://anaconda.org/conda-forge/pokemonpy-package) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pokemonpy-package.svg)](https://anaconda.org/conda-forge/pokemonpy-package) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pokemonpy-package.svg)](https://anaconda.org/conda-forge/pokemonpy-package) |
 
-Installing pokemonpy
-====================
+Installing pokemonpy-package
+============================
 
-Installing `pokemonpy` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `pokemonpy-package` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pokemonpy` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pokemonpy-package` can be installed with `conda`:
 
 ```
-conda install pokemonpy
-```
-
-or with `mamba`:
-
-```
-mamba install pokemonpy
-```
-
-It is possible to list all of the versions of `pokemonpy` available on your platform with `conda`:
-
-```
-conda search pokemonpy --channel conda-forge
+conda install pokemonpy-package
 ```
 
 or with `mamba`:
 
 ```
-mamba search pokemonpy --channel conda-forge
+mamba install pokemonpy-package
+```
+
+It is possible to list all of the versions of `pokemonpy-package` available on your platform with `conda`:
+
+```
+conda search pokemonpy-package --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search pokemonpy-package --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search pokemonpy --channel conda-forge
+mamba repoquery search pokemonpy-package --channel conda-forge
 
-# List packages depending on `pokemonpy`:
-mamba repoquery whoneeds pokemonpy --channel conda-forge
+# List packages depending on `pokemonpy-package`:
+mamba repoquery whoneeds pokemonpy-package --channel conda-forge
 
-# List dependencies of `pokemonpy`:
-mamba repoquery depends pokemonpy --channel conda-forge
+# List dependencies of `pokemonpy-package`:
+mamba repoquery depends pokemonpy-package --channel conda-forge
 ```
 
 
@@ -118,17 +118,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating pokemonpy-feedstock
-============================
+Updating pokemonpy-package-feedstock
+====================================
 
-If you would like to improve the pokemonpy recipe or build a new
+If you would like to improve the pokemonpy-package recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/pokemonpy-feedstock are
+Note that all branches in the conda-forge/pokemonpy-package-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
