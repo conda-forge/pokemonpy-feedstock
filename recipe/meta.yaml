@@ -1,13 +1,13 @@
-{% set name = "pokemonpy" %}
-{% set version = "0.2.2" %}
+{% set name = "pokemonpy-package" %}
+{% set version = "0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pokemonpy-{{ version }}.tar.gz
-  sha256: eb40f039de26279b6e18f7e5318a91dcc393c13a4a53a6209b13d1b9eba1a481
+  url: https://github.com/4ntoined/pokemonpy-package/archive/v{{ version }}.tar.gz
+  sha256: 3fcc7c403d7fccedf746658b431f1df1e9d203f8f07b3e7a48839d4bddaa9a61
 
 build:
   noarch: python
