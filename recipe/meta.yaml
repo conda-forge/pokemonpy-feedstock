@@ -1,5 +1,5 @@
 {% set name = "pokemonpy" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pokemonpy-{{ version }}.tar.gz
-  sha256: eb40f039de26279b6e18f7e5318a91dcc393c13a4a53a6209b13d1b9eba1a481
+  sha256: e4c50ecb7c7d40b944a091729c288c4fb7afbaa1057c50ced0e827c17c6b1c04
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
